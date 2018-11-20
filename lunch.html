@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Sriracha" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+
+  </head>
+  
+<body 
+ style="font-family: 'Open Sans', sans-serif;">
+    
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#4a8af3;opacity:0.9">
+  <a class="navbar-brand" href="index.html">
+    <img src="img/logo.png" width="50" height="50" class="d-inline-block align-top" alt=""></a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarText">
+    <div class="navbar-nav mr-auto">
+      <h5 class="nav-item active">
+        <a class="nav-link" href="lunch.html">Lunch <span class="sr-only">(current)</span></a>
+      </h5>
+      
+      <h5 class="nav-item active">
+        <a class="nav-link" href="travel.html">Travel</a>
+      </h5>
+      
+      <h5 class="nav-item active">
+        <a class="nav-link" href="schedule.html">Schedule</a>
+      </h5>
+      
+      <h5 class="nav-item active">
+        <a class="nav-link" href="about.html">About</a>
+      </h5>
+   </div>
+  </div>
+</nav>
+  
+<div class="clearfix"> </div>    
+
+
+
+<!--content-->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="big" style="width:100%;background-color: #4a8af3;">
+<div class="container third">
+    <div class="title">
+     <h1 class="display-4" style="color:white"> 
+      Searching for Lunch
+     </h1>
+     <p class="lead" style="margin:3% 0">Still thinking what to eat for lunch?</p>
+    </div>
+    
+    <div class="third-title" style="border:white 1px solid; height:40vh">
+     <div class="middle">
+     <h2 class="text" style="font-family: 'Sriracha', cursive;">I'm gonna eat</h2>
+     <div class="name text">
+      <h1 onclick id="choose" style="font-family: 'Sriracha', cursive; color:white; font-size:4rem"></h1></div>
+     <button type="button" class="btn text" onclick="pick();">Click</button>
+    </div> 
+    </div>
+  
+</div>
+</div>
+    
+ <div class="container four" id="list">
+     <h2 style="font-size:3rem; font-weight:500; 
+     letter-spacing:0.2em; color:dodgerblue;">
+         Check restaurant you want</h2>
+         
+         
+     <div class="accordion" id="accordionExample" >
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          A to C
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <p><img src="img/logo.png"><a href="https://www.google.com/search?hl=ko-US&rlz=1C5CHFA_enUS807US807&tbm=lcl&ei=hu3oW8KnEoi15gK7-IeICg&btnG=%EA%B2%80%EC%83%89&q=american+restaurant#rlfi=hd:;si:;mv:!3m8!1m3!1d6540.560277813408!2d-73.98321331192074!3d40.75426532694034!3m2!1i2028!2i831!4f13.1">
+         American</a></p>
+        <p><img src="img/logo.png"><a href="https://www.google.com/search?hl=ko-US&rlz=1C5CHFA_enUS807US807&tbm=lcl&ei=d_LoW4uuE-Sc5wLGlKf4CQ&q=asian+restaurant&oq=asian+restaurant&gs_l=psy-ab.3..0i203k1l10.1241.1930.0.2379.5.5.0.0.0.0.194.612.1j3.4.0....0...1c.1.64.psy-ab..2.3.515...0i7i30k1.0.kS9PgfFyI0w#rlfi=hd:;si:;mv:!3m8!1m3!1d13081.648342735154!2d-73.98514897367556!3d40.7515827671843!3m2!1i979!2i831!4f13.1">
+       Asian</a></p>
+        <p><img src="img/logo.png"><a href="https://www.google.com/search?hl=ko-US&rlz=1C5CHFA_enUS807US807&tbm=lcl&ei=kvLoW4G0EKzr5gKVt6yIDQ&q=bbq+restaurant&oq=bbq+restaurant&gs_l=psy-ab.3..0i203k1l10.813.1152.0.1618.2.2.0.0.0.0.135.236.0j2.2.0....0...1c.1.64.psy-ab..0.2.236...0i7i30k1.0.oMehtW6zx5w#rlfi=hd:;si:;mv:!3m12!1m3!1d44721.17361646444!2d-73.91424095!3d40.73114879999999!2m3!1f0!2f0!3f0!3m2!1i550!2i355!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:9">
+         BBQ</a></p>
+        <p><img src="img/logo.png"><a href="https://www.google.com/search?hl=ko-US&rlz=1C5CHFA_enUS807US807&tbm=lcl&ei=lPLoW6qdMpKd5gKHpbKoBA&q=bagle+restaurant&oq=bagle+restaurant&gs_l=psy-ab.3..0i7i30k1l4j0i7i10i30k1l2j0i7i30k1j0i13k1j0i8i7i30k1l2.34090.34778.0.35345.5.5.0.0.0.0.137.446.2j2.4.0....0...1c.1.64.psy-ab..1.4.445...0i203k1.0.BjUIfYk1Icw#rlfi=hd:;si:;mv:!3m12!1m3!1d34632.72898055647!2d-73.9522247!3d40.75118474999999!2m3!1f0!2f0!3f0!3m2!1i298!2i275!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:9">
+         Bagel</a></p>
+        <p><img src="img/logo.png"><a href="https://www.google.com/search?hl=ko-US&rlz=1C5CHFA_enUS807US807&tbm=lcl&ei=ufLoW5yYB4Lf5gLX-I6QCQ&q=cajun+restaurant&oq=cajun+restaurant&gs_l=psy-ab.3..0i203k1l10.16778.18531.0.18787.7.6.1.0.0.0.240.685.4j1j1.6.0....0...1c.1.64.psy-ab..0.7.686...0i7i30k1.0.sz2xqgyqTDM#rlfi=hd:;si:;mv:!3m12!1m3!1d154322.71444744192!2d-73.88692605!3d40.7840275!2m3!1f0!2f0!3f0!3m2!1i378!2i613!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:9">
+         Cajun</a></p>
+        <p><img src="img/logo.png"><a href="https://www.google.com/search?hl=ko-US&rlz=1C5CHFA_enUS807US807&tbm=lcl&ei=zPLoW4alOo-n5gKn876oBw&q=chinese+restaurant&oq=chin+restaurant&gs_l=psy-ab.3.0.0i7i30k1l2j0i203k1j0i7i30k1l7.46128.46908.0.48167.4.4.0.0.0.0.129.422.2j2.4.0....0...1c.1.64.psy-ab..1.3.325....0.THCAjKnHK58#rlfi=hd:;si:;mv:!3m12!1m3!1d12121.566499715684!2d-73.9152329!3d40.750573900000006!2m3!1f0!2f0!3f0!3m2!1i478!2i385!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:9">
+         Chinese</a></p>
+        <p><img src="img/logo.png"><a href="https://www.google.com/search?hl=ko-US&rlz=1C5CHFA_enUS807US807&tbm=lcl&ei=_vLoW6_bFMjG5gL4i7DQAw&q=coffee+and+tea+restaurant&oq=coffee+and+tea+restaurant&gs_l=psy-ab.3..0i203k1j0i8i30k1l2j0i5i30k1j0i8i30k1l6.11159.13498.0.13662.14.14.0.0.0.0.126.1300.7j6.13.0....0...1c.1.64.psy-ab..1.13.1297...0i7i30k1j0i7i30i19k1j0i19k1j0i8i7i30k1j0i8i7i30i19k1j0i7i5i30i19k1.0.5IhiIe5YnEg#rlfi=hd:;si:;mv:!3m12!1m3!1d33248.62821391077!2d-73.9457736!3d40.748768!2m3!1f0!2f0!3f0!3m2!1i753!2i528!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9">
+         Coffee and Tea</a></p>
+        </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          D to F
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          G to I
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+       </div>
+    </div>
+  </div>
+</div>    
+    
+    <div class="list" >
+     <div class="row">   
+     <div class="col-md-6">
+     <h3>A to C</h3>
+     <p><img src="img/logo.png">American</p>
+     <p><img src="img/logo.png"><a href="https://www.google.com/search?hl=ko-US&rlz=1C5CHFA_enUS807US807&tbm=lcl&ei=hu3oW8KnEoi15gK7-IeICg&btnG=%EA%B2%80%EC%83%89&q=american+restaurant#rlfi=hd:;si:;mv:!3m8!1m3!1d6540.560277813408!2d-73.98321331192074!3d40.75426532694034!3m2!1i2028!2i831!4f13.1">
+      Asian</a></p>
+     <p><img src="img/logo.png"><a href="#">BBQ</a></p>
+     <p><img src="img/logo.png"><a href="#">Bagel</a></p>
+     <p><img src="img/logo.png"><a href="#">Cajun</a></p>
+     <p><img src="img/logo.png"><a href="#">Cheesestakes</a></p>
+     <p><img src="img/logo.png"><a href="#">Chinese</a></p>
+     <p><img src="img/logo.png"><a href="#">Coffee and Tea</a></p>
+    </div>
+    
+     <div class="col-md-6">
+     <h3>D to F</h3>
+     <p><img src="img/logo.png"><a href="#">Dim Sum</a></p>
+     <p><img src="img/logo.png"><a href="#">Diner</a></p>
+     <p><img src="img/logo.png"><a href="#">Dominican</a></p>
+     <p><img src="img/logo.png"><a href="#">Fast Food</a></p>
+     <p><img src="img/logo.png"><a href="#">French</a></p>
+     <p><img src="img/logo.png"><a href="#">Fresh Fruits</a></p>
+     <p><img src="img/logo.png"><a href="#">Frozen Yogurt</a></p>
+    </div>
+    </div>
+    
+     <div class="row">   
+     <div class="col-md-6">
+     <h3>G to I</h3>
+     <p><img src="img/logo.png"><a href="#">Gluten Free</a></p>
+     <p><img src="img/logo.png"><a href="#">Hamburgers</a></p>
+     <p><img src="img/logo.png"><a href="#">Hot Dogs</a></p>
+     <p><img src="img/logo.png"><a href="#">Italian</a></p>
+    </div>
+    
+    <div class="col-md-6">
+     <h3>J to L</h3>
+     <p><img src="img/logo.png"><a href="#">Japanese</a></p>
+     <p><img src="img/logo.png"><a href="#">Korean</a></p>
+    </div>
+    </div> 
+    
+     <div class="row">   
+     <div class="col-md-6">
+     <h3>M to O</h3>
+     <p><img src="img/logo.png"><a href="#">Mediterranean</a></p>
+     <p><img src="img/logo.png"><a href="#">Mexican</a></p>
+     <p><img src="img/logo.png"><a href="#">Middle Eastern</a></p>
+     <p><img src="img/logo.png"><a href="#">Organic</a></p>
+    </div>
+    
+    <div class="col-md-6">
+     <h3>P to S</h3>
+     <p><img src="img/logo.png"><a href="#">Pizza</a></p>
+     <p><img src="img/logo.png"><a href="#">Poke</a></p>
+     <p><img src="img/logo.png"><a href="#">Salad</a></p>
+     <p><img src="img/logo.png"><a href="#">Sandwiches</a></p>
+     <p><img src="img/logo.png"><a href="#">Soup</a></p>
+     <p><img src="img/logo.png"><a href="#">Spanish</a></p>
+     <p><img src="img/logo.png"><a href="#">Steak</a></p>
+     <p><img src="img/logo.png"><a href="#">Sushi</a></p>
+    </div>
+    </div> 
+    
+     <div class="row">   
+     <div class="col-md-6">
+     <h3>T to U</h3>
+     <p><img src="img/logo.png"><a href="#">Thai</a></p>
+    </div>
+    
+    <div class="col-md-6">
+     <h3>V to Z</h3>
+     <p><img src="img/logo.png"><a href="#">Vegan</a></p>
+     <p><img src="img/logo.png"><a href="#">Vegetarian</a></p>
+     <p><img src="img/logo.png"><a href="#">Wings</a></p>
+     <p><img src="img/logo.png"><a href="#">Wraps</a></p>
+    </div>
+    </div> 
+     
+    </div>
+    </div>
+    
+
+
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/lunch.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  
+  </body>
+</html>
